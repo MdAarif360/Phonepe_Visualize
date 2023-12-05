@@ -181,7 +181,7 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 ## Geo-visualization of Transaction datas
 - To see detailed code to use plotly for Geo visualization see phonepe_pulse_dashboard.py (Geo-visualization of transacion data section)
 - ### Aggregated All India T & U:
-https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/all_india_data.png
+![GitHub Image](Output_samples/all_india_data.png)
 ![Outlook](https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/all_india_user.png)
 
 - This image insights to increase user to peer to peer payments and recharge payments.the uttar pradesh has high transaction amount and jharkand has high transaction count and lower than uttar pradesh transaction amount and uttar pradesh has transaction count was lower than jharkand
