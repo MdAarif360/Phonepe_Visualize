@@ -62,13 +62,13 @@ cont.commit()
 
 csr.execute("""create table if not exists top_transaction(State varchar(40),
             Transaction_Year int,
-            District  varchar(50),
             Quater int,
+            District  varchar(50),
             Transaction_Count bigint,
             Transaction_Amount double precision)""")
 cont.commit()
 
-csr.execute("""create table if not exists top_user(State varchar(40),
+csr.execute("""create table if not exists   (State varchar(40),
             Transaction_Year int,
             Quater int,
             District varchar(50),
@@ -103,7 +103,7 @@ def insert_sql():
     cont.commit()
 
     #table top transaction
-    query = """INSERT INTO top_transaction (State, Transaction_Year,  District, Quater, Transaction_Count, Transaction_Amount)VALUES (%s, %s, %s, %s, %s, %s)"""
+    query = """INSERT INTO top_transaction (State, Transaction_Year, Quater, District, Transaction_Count, Transaction_Amount)VALUES (%s, %s, %s, %s, %s, %s)"""
     for index, row in df_top_trans.iterrows():
         csr.execute(query, tuple(row))
     cont.commit()

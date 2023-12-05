@@ -1,4 +1,5 @@
-!git clone https://github.com/PhonePe/pulse
+#git clone "https://github.com/username/repository.git"
+#github clone https://github.com/PhonePe/pulse.git
 
 #required libaries and module
 import pandas as pd
@@ -21,7 +22,7 @@ def get_district_from_pincode(pincode):
 #-------------------------------------------------------------aggregated--------------------------------------------------------------------
 
 #aggregated transaction path
-path="/content/pulse/data/aggregated/transaction/country/india/state/"
+path="content/pulse/data/aggregated/transaction/country/india/state/"
 aggr_state_list=os.listdir(path)
 #print(aggr_state_list)
 
@@ -51,7 +52,7 @@ for i in aggr_state_list:
 aggr_trans=pd.DataFrame(aggr_clm)
 
 #aggregated user path
-path_u="/content/pulse/data/aggregated/user/country/india/state/"
+path_u="content/pulse/data/aggregated/user/country/india/state/"
 aggU_state_list=os.listdir(path_u)
 #print(aggU_state_list)
 
@@ -85,7 +86,7 @@ aggr_user=pd.DataFrame(aggU_clm)
 #---------------------------------------------------------------map---------------------------------------------------------------------
 
 #map transaction path
-path1="/content/pulse/data/map/transaction/hover/country/india/state/"
+path1="content/pulse/data/map/transaction/hover/country/india/state/"
 map_state_list=os.listdir(path1)
 #print(map_state_list)
 
@@ -115,7 +116,7 @@ for i in map_state_list:
 map_trans=pd.DataFrame(map_clm)
 
 #map user path
-path_u1="/content/pulse/data/map/user/hover/country/india/state/"
+path_u1="content/pulse/data/map/user/hover/country/india/state/"
 mapU_state_list=os.listdir(path_u1)
 #print(mapU_state_list)
 
@@ -147,7 +148,7 @@ map_users=pd.DataFrame(mapU_clm)
 #-------------------------------------------------------------top--------------------------------------------------------------------------
 
 #top transaction path
-path2="/content/pulse/data/top/transaction/country/india/state/"
+path2="content/pulse/data/top/transaction/country/india/state/"
 top_state_list=os.listdir(path2)
 top_state_list
 
@@ -189,7 +190,7 @@ for i in top_state_list:
 top_trans=pd.DataFrame(top_clm)
 
 #top user path
-path_u2="/content/pulse/data/top/user/country/india/state/"
+path_u2="content/pulse/data/top/user/country/india/state/"
 topU_state_list=os.listdir(path_u2)
 topU_state_list
 
@@ -227,14 +228,14 @@ top_users=pd.DataFrame(topU_clm)
 
 #create CSV file
 #df to Csv
-aggr_trans.to_csv('aggregated_transaction.csv',index=False)
+aggr_trans.to_csv("CSV/aggregated_transaction.csv",index=False)
 
-aggr_user.to_csv("aggregated_user.csv",index=False)
+aggr_user.to_csv("CSV/aggregated_user.csv",index=False)
 
-map_trans.to_csv("map_transaction.csv",index=False)
+map_trans.to_csv("CSV/map_transaction.csv",index=False)
 
-map_users.to_csv("map_user.csv",index=False)
+map_users.to_csv("CSV/map_user.csv",index=False)
 
-top_trans.to_csv("top_transaction.csv",index=False)
+top_trans.to_csv("CSV/top_transaction.csv",index=False)
 
-top_users.to_csv("top_user.csv",index=False)
+top_users.to_csv("CSV/top_user.csv",index=False)
