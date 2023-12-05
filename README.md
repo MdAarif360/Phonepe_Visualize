@@ -182,29 +182,29 @@ fig = px.bar(df_trans_query_result1, x = 'State', y ='Transaction_amount', color
 - To see detailed code to use plotly for Geo visualization see phonepe_pulse_dashboard.py (Geo-visualization of transacion data section)
 - ### Aggregated All India T & U:
 ![GitHub Image](Output_samples/all_india_data.png)
-![Outlook](https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/all_india_user.png)
+![GitHub Image](Output_samples/all_india_user.png)
 
 - This image insights to increase user to peer to peer payments and recharge payments.the uttar pradesh has high transaction amount and jharkand has high transaction count and lower than uttar pradesh transaction amount and uttar pradesh has transaction count was lower than jharkand
 
 ## User device analysis of Phonepe data
 - ### BAR CHART ANALYSIS T & U:
-![Outlook](https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/map_user.png)
+![GitHub Image](Output_samples/map_user.png)
 
 - This Image insights Transaction and user improve user count: Xiaomi brand has default app was low in this states, himachal pradesh,jammu kashmir,manipur,puthucherry,arunasala pradesh,sikkim,nagaland,mizoram,lakshadweep and andaman & nicobar so increase the user to set default app on this brand and then making  more offers on  this brand and states.
 
 - ### PIE CHART ANALYSIS T & U:
-![Outlook](https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/map_pie.png)
+![GitHub Image](Output_samples/map_pie.png)
 
 - This Image insights  improve user count in other brand mobile, it covered and changes was big.so set default app on this states uttar pradesh,maharashtra,west bengal,rajastan,madhya pradesh,karnataka,andhra pradesh,delhi,tamil nadu,gujarat.
 
 ## Top user analysis of phonepe data
 - ### PIE CHART ANALYSIS T & U:
-![Outlook](https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/top_pie.png)
+![GitHub Image](Output_samples/top_pie.png)
 
 - This Image insights to increase registered user to improve ads app_opens was high in every states but register user was low so increase the register users.
 
 - ### BAR CHART ANALYSIS T & U: 
-![Outlook](https://github.com/MdAarif360/Phonepe_Visualize/tree/main/Output_samples/top_user.png)
+![GitHub Image](Output_samples/top_user.png)
 
 
 
