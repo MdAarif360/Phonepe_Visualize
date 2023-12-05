@@ -78,9 +78,9 @@ aggr_state_list=os.listdir(path)
 
 * Initially, we Clone the data from the Phonepe GitHub repository by using Python libraries.
 ### In order to get the data clone the github 
-- Inorder to clone the github data into to working environment use below command
+- Inorder to clone the github data into to working environment use below command ensure Github is installed
 ```python
-!git clone https://github.com/PhonePe/pulse
+github clone https://github.com/PhonePe/pulse.git
 ```
 ## b) Process and Transform the data
 ### Fetch data & Creating csv file 
